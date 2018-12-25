@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="23dp">
+
+            <TextView
+                android:id="@+id/textConf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="@string/conf"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/yesConf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textConf"
+                android:layout_marginTop="19dp"
+                android:background="#4caf50"
+                android:text="Yes"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/noConf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#f44336"
+                android:layout_alignBottom="@id/yesConf"
+                android:textColor="@android:color/white"
+                android:layout_alignParentRight="true"
+                android:text="No" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

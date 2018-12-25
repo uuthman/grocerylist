@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d7ccc8"
+    android:orientation="vertical"
+    tools:context=".Activities.DetailActivity">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView"
+
+        android:layout_width="match_parent"
+        app:cardBackgroundColor="#8d6e63"
+        android:layout_height="match_parent"
+        tools:ignore="MissingConstraints">
+
+        <RelativeLayout
+            android:layout_width="376dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="200dp"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/nameDet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textColor="@android:color/white"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/qtyDet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/nameDet"
+                android:paddingTop="3dp"
+                android:text="Qty: "
+                android:textColor="@android:color/white"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/dateDet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/qtyDet"
+                android:paddingTop="3dp"
+                android:text="Date: "
+                android:textColor="@android:color/white"
+                android:textStyle="italic" />
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/dateDet"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="15dp"
+
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/edit_button_det"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@android:drawable/ic_menu_edit"
+                    android:backgroundTint="#4caf50" />
+
+                <Button
+                    android:id="@+id/delete_button_det"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+
+                    android:background="@android:drawable/ic_menu_delete"
+
+                    android:backgroundTint="#f44336" />
+
+            </TableRow>
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>
